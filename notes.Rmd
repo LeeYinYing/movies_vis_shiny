@@ -1,0 +1,13 @@
+---
+title: "Notes"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Assumptions:
+
+- Some of the movies do not contain the year of release, thus assumed that it is alright to ignore these movies for the bar plot and time plot.
+
+- Some movie names are too long to fit onto the graph, thus they are shortened. 
