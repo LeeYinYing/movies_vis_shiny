@@ -5,7 +5,6 @@ library(forcats)
 library(shiny)
 library(stringr)
 
-setwd("~/Projects/groundswell-takehome")
 
 # Load Data
 tags_df <- read.csv('ml-latest-small/tags.csv', stringsAsFactors = F)
