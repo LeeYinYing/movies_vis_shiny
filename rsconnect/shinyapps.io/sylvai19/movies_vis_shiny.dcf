@@ -1,0 +1,10 @@
+name: movies_vis_shiny
+title:
+username:
+account: sylvai19
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 921821
+bundleId: 2074516
+url: https://sylvai19.shinyapps.io/movies_vis_shiny/
+when: 1557474170.39469

@@ -4,16 +4,16 @@ library(forcats)
 library(stringr)
 
 # Load Data
-tags_df <- read.csv('../ml-latest-small/tags.csv', stringsAsFactors = F)
-ratings_df <- read.csv('../ml-latest-small/ratings.csv')
-movies_df <- read.csv('../ml-latest-small/movies.csv', stringsAsFactors = F)
-links_df <- read.csv('../ml-latest-small/links.csv')
+tags_df <- read.csv('ml-latest-small/tags.csv', stringsAsFactors = F)
+ratings_df <- read.csv('ml-latest-small/ratings.csv')
+movies_df <- read.csv('ml-latest-small/movies.csv', stringsAsFactors = F, encoding = 'UTF-8')
+links_df <- read.csv('ml-latest-small/links.csv')
 
 # Clean data
 ## Movie Titles
 clean_titles <- function(raw_title){
   titles = str_replace(raw_title, '\\(\\d{4}\\)', "") # Remove release year
-  titles = str_replace(titles, ', The.+', "") # Remove irrelevant ends
+  titles = str_replace(titles, ', The.+$', "") # Remove irrelevant ends
   titles
 }
 
