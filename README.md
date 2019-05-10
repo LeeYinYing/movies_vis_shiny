@@ -13,3 +13,16 @@ In this project three visualizations are created from the [MovieLens Dataset](ht
 ## Timeline of movies released to the most prevelant genres
 
 ![](img/dashboard3.PNG)
+
+### R Package Dependencies
+
+- colorspace
+- DT
+- forcats
+- plotly
+- scales
+- shiny
+- shinythemes
+- stringr
+- tidyverse
+- treemapify
